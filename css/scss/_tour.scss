@@ -1,0 +1,43 @@
+.tour-title {
+    margin-bottom: 40px;
+}
+
+.tours {
+    margin-bottom: 56px;
+    .tour {
+        border-bottom: 1px solid rgba($orange, 0.3);
+        padding-bottom: 24px;
+        .tour-date {
+            @include fontSedgwickAve;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+        .tour-place {
+            @include fontExtraBold;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+        .tour-city {
+            @include fontRegular;
+            font-size: 22px;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+
+        .tour-ticket {
+            @include fontExtraBold;
+            font-size: 16px;
+            line-height: 80px;
+            color: $orange;
+            &:hover {
+                cursor: pointer;
+                color: $white;
+                @include transition;
+            }
+        }
+
+    }
+}

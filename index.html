@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Murda Beatz | Unleash Your Musical Journey | Explore Music Beats, Videos, Store, and More</title>
+    
+    <meta name="description" content="Discover a wide selection of music beats, videos, photos, and merchandise. Stay updated on the latest releases and tour dates. Subscribe to our mailing list for exclusive offers and updates.">
+    <meta name="keywords" content="music beats, videos, store, photos, releases, tour, subscribe, mailing list">
+    <meta name="author" content="Murda Beatz">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F6C82A">
+
+    <!-- Open Graph tags for Facebook -->
+    <meta property="og:title" content="Murda Beatz">
+    <meta property="og:description" content="Discover a wide selection of music beats, videos, photos, and merchandise. Stay updated on the latest releases and tour dates. Subscribe to our mailing list for exclusive offers and updates.">
+    <meta property="og:image" content="https://murdabeatz.web507.com/image.jpg">
+    <meta property="og:url" content="https://murdabeatz.web507.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card tags for Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Murda Beatz">
+    <meta name="twitter:description" content="Discover a wide selection of music beats, videos, photos, and merchandise. Stay updated on the latest releases and tour dates. Subscribe to our mailing list for exclusive offers and updates.">
+    <meta name="twitter:image" content="https://murdabeatz.web507.com/image.jpg">
+    <meta name="twitter:url" content="https://murdabeatz.web507.com">
+    <!-- Instagram-specific tags -->
+    <meta property="instgram:site_name" content="Murda Beatz">
+    <meta property="instagram:url" content="https://murdabeatz.web507.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/murda.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  <!-- GENERAL WRAPPER -->
+  <div class="w-full relative">
+    
+      <!-- HEADER -->
+      <div class="mobileMenuButton lg:hidden sticky top-0 z-10">
+        <a href="javascript:void(0);" onclick="toggleMobileMenu();"><img loading="lazy" src="./img/menu.svg" /></a>
+      </div>
+
+      <nav class="w-full heroSectionWrapper" id="top">
+          <div class="container m-auto ml-auto flex flex-col lg:flex-row items-center lg:justify-between">
+            <a onclick="scrolltoView('retopleases')" href="javascript:void(0);" class="logoHeader"><img loading="lazy" src="./img/headerlogo.png" alt="headerlogo" /></a>
+            <div class="topmenu">
+              <figure class="logoHeaderMobile"><a onclick="scrolltoView('top')" href="javascript:void(0);"><img loading="lazy" src="./img/headerlogo.png" alt="headerlogoMobile" /></a></figure>
+              <a href="javascript:void(0);" onclick="toggleMobileMenu();" class="mobileMenuButton lg:hidden"><img loading="lazy" src="./img/menu.svg" /></a>
+              <ul class="flex flex-col justify-start lg:flex-row lg:justify-between items-start">
+                <li><a onclick="scrolltoView('releases')" href="javascript:void(0);" title="Releases">Releases</a></li>
+                <li><a onclick="scrolltoView('tour')" href="javascript:void(0);" title="Videos">Tour</a></li>
+                <li><a onclick="scrolltoView('videos')" href="javascript:void(0);" title="Videos">Videos</a></li>
+                <li><a onclick="scrolltoView('store')" href="javascript:void(0);" title="Store">Store</a></li>
+                <li><a onclick="scrolltoView('photos')" href="javascript:void(0);" title="Photos">Photos</a></li>
+                <li><a onclick="scrolltoView('suscribe')" href="javascript:void(0);" title="Subscribe">Subscribe</a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+
+      <!-- HERO IMAGE -->
+      <div class="flex flex-col lg:flex-row w-full heroImages relative jusity-end">
+        <div class="container mx-auto flex flex-col lg:flex-row items-start bannerHeader">
+          <hgroup class="w-12/12 lg:w-5/12 flex flex-col mt-auto order-2 lg:order-1 mb-10 lg:mb-0">
+            <h2 class="bannerHeader-description">Check out on Splice</h2>
+            <h1 class="bannerHeader-title">Murda Beatz Quarantine Kit Sample Pack</h1>
+            <a href="#" class="roundedButton blackbutton" title="LISTEN NOW">LISTEN NOW</a>
+          </hgroup>
+          <figure class="lg:w-7/12 flex items-center justify-start bannerHeader-image order-1 lg:order-2">
+            <img loading="lazy" src="./img/banner.png" alt="banner" />
+          </figure>
+          <div class="w-full lg:w-1/12 flex lg:flex-col justify-between items-start lg:justify-center bannerHeader-social mt-auto mb-auto order-3 lg:order-3">
+            <a href="./"><img loading="lazy" src="./img/ico-mail.png" alt="ico-mail" /></a>
+            <a href="./"><img loading="lazy" src="./img/ico-spotify.png" alt="ico-spotify.png" /></a>
+            <a href="./"><img loading="lazy" src="./img/ico-apple.png" alt="ico-apple" /></a>
+            <a href="./"><img loading="lazy" src="./img/ico-ig.png" alt="ico-ig" /></a>
+            <a href="./"><img loading="lazy" src="./img/ico-twitter.png" alt="ico-twitter" /></a>
+            <a href="./"><img loading="lazy" src="./img/ico-fb.png" alt="ico-fb" /></a>
+          </div>
+        </div>
+      </div>
+
+    <!-- RELEASES -->
+    <div class="w-full grayBg lightcut relative" id="releases">
+      <div class="relative container mx-auto py-20 flex flex-col z-10">
+        <h1 class="strokeTitle">RELEASES</h1>
+        <div class="flex flex-col lg:flex-row mx-auto albumReleasesWrapper">
+          <div class="w-12/12 lg:w-6/12 album album-big">
+              <a href="#"><img loading="lazy" src="./img/release-album-big.png" alt="release-album-big" fluid /></a>
+          </div>
+          <div class="w-12/12 lg:w-6/12 grid grid-cols-1 lg:grid-cols-2">
+            <a href="#" class="album flex justify-center">
+              <img loading="lazy" src="./img/release-album-small1.png" alt="release-album-small1" fluid />
+            </a>
+            <a href="#" class="album flex justify-center">
+              <img loading="lazy" src="./img/release-album-small2.png" alt="release-album-small2" fluid />
+            </a>
+            <a href="#" class="album flex justify-center">
+              <img loading="lazy" src="./img/release-album-small3.png" alt="release-album-small3" fluid />
+            </a>
+            <a href="#" class="album flex justify-center">
+              <img loading="lazy" src="./img/release-album-small4.png" alt="release-album-small4" fluid />
+            </a>
+          </div>
+        </div>
+        <a href="#" class="ml-auto mr-auto lg:mr-0 roundedButton orangebutton" title="VIEW ALL RELEASES">VIEW ALL RELEASES</a>
+      </div>
+    </div>
+    
+    <!-- TOUR -->
+    <div class="w-full blackbg" id="tour">
+      <div class="container mx-auto flex flex-col" id="tourWrapper">
+        <h1 class="tour-title strokeTitle">TOUR</h1>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 tours">
+          
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Jun 6</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+          
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Jul 31</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Aug 7</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+          
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Jun 6</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Jun 6</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+          
+          <article class="tour grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="flex flex-col tour-description">
+              <p class="tour-date">Jul 31</p>
+              <p class="tour-place">JEWEL NIGHTCLUB</p>
+              <p class="tour-city">Las Vegas, NV</p>
+            </div>
+            <div class="flex justify-around tour-tickets">
+              <a href="#" class="tour-ticket">TICKETS</a>
+              <a href="#" class="tour-ticket">VIP</a>
+              <a href="#" class="tour-ticket">RSVP</a>
+            </div>
+          </article>
+
+        </div>
+        <a href="#" class="ml-auto mr-auto lg:mr-0 roundedButton orangebutton" title="VIEW ALL RELEASES">VIEW ALL RELEASES</a>
+      </div>
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="w-full grayBg" id="videos">
+      <div class="container mx-auto flex flex-col" id="videosWrapper">
+        <h1 class="videos-title strokeTitle">VIDEOS</h1>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 videos">
+          
+          <article class="video video-active flex flex-col items-start">
+            <figure class="relative video-featured">
+              <img loading="lazy" src="./img/video-featured.png" alt="video-featured" />
+            </figure>
+            <div class="video-info">
+              <h1 class="video-title">Banana Split</h1>
+              <h1 class="video-description">MURDA BEATZ (FEAT. YNW MELLY & LIL DURK)</h1>
+            </div>
+          </article>
+          
+          <article class="video flex flex-col items-start">
+            <figure class="relative video-featured">
+              <img loading="lazy" src="./img/video-featured.png" alt="video-featured" />
+            </figure>
+            <hgroup class="video-info">
+              <h1 class="video-title">Banana Split</h1>
+              <h1 class="video-description">MURDA BEATZ (FEAT. YNW MELLY & LIL DURK)</h1>
+            </hgroup>
+          </article>
+
+        </div>
+        <a href="#" class="ml-auto mr-auto lg:mr-0 roundedButton orangebutton mt-10 mb-20" title="VIEW ALL VIDEOS">VIEW ALL VIDEOS</a>
+      </div>
+    </div>
+    
+    <!-- STORES -->
+    <div class="w-full orangebg" id="store">
+      <div class="container mx-auto flex flex-col" id="storeWrapper">
+        <h1 class="strokeTitle blackLine">STORE</h1>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 stores">
+          
+          <article class="store">
+            <figure class="store-image">
+              <img loading="lazy" src="./img/product.png" alt="product" />
+            </figure>
+            <hgroup class="store-info">
+              <h1 class="store-product-title">Banana Split Long Sleeve</h1>
+              <h1 class="store-product-price">$30.00</h1>
+            </hgroup>
+            <figure class="store-download-ico">
+              <img loading="lazy" src="./img/ico-store-download.svg" alt="ico-store-download" />
+            </figure>
+          </article>
+          <article class="store">
+            <figure class="store-image">
+              <img loading="lazy" src="./img/product.png" alt="product" />
+            </figure>
+            <hgroup class="store-info">
+              <h1 class="store-product-title">Banana Split Long Sleeve</h1>
+              <h1 class="store-product-price">$30.00</h1>
+            </hgroup>
+            <figure class="store-download-ico">
+              <img loading="lazy" src="./img/ico-store-download.svg" alt="ico-store-download" />
+            </figure>
+          </article>
+          <article class="store">
+            <figure class="store-image">
+              <img loading="lazy" src="./img/product.png" alt="product" />
+            </figure>
+            <hgroup class="store-info">
+              <h1 class="store-product-title">Banana Split Long Sleeve</h1>
+              <h1 class="store-product-price">$30.00</h1>
+            </hgroup>
+            <figure class="store-download-ico">
+              <img loading="lazy" src="./img/ico-store-download.svg" alt="ico-store-download" />
+            </figure>
+          </article>
+
+        </div>
+        <a href="#" class="ml-auto mr-auto lg:mr-0 roundedButton blackbutton mt-5 mb-10" title="SHOP ALL">SHOP ALL</a>
+      </div>
+    </div>
+
+    <!-- PHOTOS -->
+    <div class="w-full blackbg" id="photos">
+      <div class="container mx-auto flex flex-col" id="photosWrapper">
+        <h1 class="photos-title strokeTitle">PHOTOS</h1>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-5 gap-4 photos">
+          
+          <figure class="photo">
+            <a href="#" title="photos01"><img loading="lazy" src="./img/photos/photos01.jpg" alt="photos01" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos02"><img loading="lazy" src="./img/photos/photos02.jpg" alt="photos02" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos03"><img loading="lazy" src="./img/photos/photos03.jpg" alt="photos03" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos04"><img loading="lazy" src="./img/photos/photos04.jpg" alt="photos04" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos05"><img loading="lazy" src="./img/photos/photos05.jpg" alt="photos05" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos06"><img loading="lazy" src="./img/photos/photos06.jpg" alt="photos06" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos07"><img loading="lazy" src="./img/photos/photos07.jpg" alt="photos07" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos08"><img loading="lazy" src="./img/photos/photos08.jpg" alt="photos08" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos09"><img loading="lazy" src="./img/photos/photos09.jpg" alt="photos09" /></a>
+          </figure>
+          <figure class="photo">
+            <a href="#" title="photos10"><img loading="lazy" src="./img/photos/photos10.jpg" alt="photos10" /></a>
+          </figure>
+
+        </div>
+        <a href="#" class="ml-auto mr-auto lg:mr-0 roundedButton orangebutton" title="VIEW ALL PHOTOS">VIEW ALL PHOTOS</a>
+      </div>
+    </div>
+
+    <!-- SUSCRIBE -->
+    <div class="w-full grayBg" id="suscribe">
+      <div class="container mx-auto flex flex-col" id="suscribeWrapper">
+        <h1 class="suscribe-title strokeTitle">SUSCRIBE</h1>
+
+        <form id="myForm" onsubmit="return validateForm()">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 suscribe">
+              <input class="input-field" type="email" id="email" placeholder="EMAIL ADDRESS">
+              <select id="country" name="country">
+                <option value="">Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+              </select>
+          </div>
+          <div class="grid grid-cols-1">
+            
+            <fieldset>
+              <p class="suscribe suscribe-to-emails">Subscribe to Emails From:</p>
+            </fieldset>
+            
+            <fieldset class="flex flex-col lg:flex-row justify-start leading-loose lg:leading-normal">
+              
+              <label class="suscribe suscribe-from-checkbox mr-5" for="murdaBeatz">
+                <input type="checkbox" id="murdaBeatz" name="recordLabel" value="Murda Beatz" class="filled-in">
+                <span>Murda Beatz</span>
+              </label>
+
+              <label class="suscribe suscribe-from-checkbox mr-5" for="interscopeRecords">
+                <input type="checkbox" id="interscopeRecords" name="recordLabel" value="Interscope Records" class="filled-in">
+                <span>Interscope Records</span>
+              </label>
+
+              <label class="suscribe suscribe-from-checkbox" for="universalMusicGroup">
+                <input type="checkbox" id="universalMusicGroup" name="recordLabel" value="Universal Music Group" class="filled-in">
+                <span>Universal Music Group</span>
+              </label>
+
+            </fieldset>
+          </div>
+
+          <p class="suscribe disclaimer">By submitting this form, you agree to the <a href="#">Universal Music Group Privacy Policy.</a></p>
+
+          <div class="suscribe w-full rounded-full formresult bg-green-400 text-white mt-10 p-2 text-center" id="messageSuccess">
+            Successfully subscribed
+          </div>
+          
+          <div class="suscribe w-full rounded-full formresult bg-red-400 text-white mt-10 p-2 text-center" id="messageError">
+            Please fill in all the fields
+          </div>
+
+          <button type="submit" class="suscribe ml-auto lg:ml-0 mr-auto roundedButton orangebutton mt-10 mb-20 px-20" title="SUBMIT">SUBMIT</button>
+        </form>
+
+      </div>
+    </div>
+  
+  </div>
+  <!-- GENERAL WRAPPER -->
+    
+  <footer class="blackbg p-0">
+    <div class="container py-5 lg:py-2 mx-auto">
+      <ul class="flex flex-col lg:flex-row justify-around leading-loose lg:leading-normal">
+        <li><a href="#">© Interscope Records</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Cookie Choices</a></li>
+        <li><a href="#">Do Not Sell My Personal Information</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+
+  <script type="text/javascript" src="js/murda.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+.albumReleasesWrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1017px;
+    .album {
+        @include transition;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .album-big {
+            img {
+                max-width: 267px;
+            }
+        }
+    }
+}

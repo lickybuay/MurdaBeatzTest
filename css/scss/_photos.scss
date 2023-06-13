@@ -1,0 +1,16 @@
+.photos-title {
+    margin-bottom: 40px;
+}
+
+.photos {
+    margin-bottom: 56px;
+    .photo {
+        @include transition;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+}

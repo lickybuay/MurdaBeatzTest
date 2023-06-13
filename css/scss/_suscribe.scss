@@ -1,0 +1,65 @@
+#suscribeWrapper {
+    max-width: 713px;
+    .suscribe-title {
+        margin-top: 61px;
+        margin-bottom: 36px;
+    }
+    .suscribe-to-emails {
+        @include fontSedgwickAve;
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 18px;
+    }
+    .suscribe-from-checkbox {
+        @include fontExtraBold;
+        color: $yellow;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .input-field {
+        font-size: 20px;
+        @include fontRegular;
+        color: $orange;
+        &::placeholder {
+            font-size: 20px;
+            @include fontRegular;
+            color: $orange
+        }
+    }
+    .select-wrapper input.select-dropdown {
+        font-size: 20px;
+        @include fontRegular;
+        color: $orange;
+        text-transform: uppercase;
+    }
+    .select-wrapper .caret {
+        fill: $orange;
+    }
+    .dropdown-content li {
+        background: $black;
+        @include fontExtraBold;
+    }
+    .disclaimer {
+        color: $white;
+        @include fontExtraBold;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 49px;
+        a {
+            color: $yellow;
+            @include transition;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    input[type=checkbox].filled-in:checked + span:not(.lever):after {
+        background: none;
+    }
+    .formresult {
+        @include fontExtraBold;
+        text-transform: uppercase;
+        font-size: 18px;
+        display: none;
+    }
+}

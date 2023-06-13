@@ -1,0 +1,22 @@
+
+
+//Fonts
+@mixin fontRegular{
+    font-family: 'Sen'
+}
+
+@mixin fontSedgwickAve{
+    font-family: 'SedgwickAve'
+}
+
+@mixin fontBold{
+    font-family: 'SenBold'
+}
+
+@mixin fontExtraBold{
+    font-family: 'SenExtraBold'
+}
+
+@mixin transition {
+    transition: 200ms all ease-in-out;
+}

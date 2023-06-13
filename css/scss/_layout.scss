@@ -1,0 +1,202 @@
+* {
+    scroll-behavior: auto;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1198px;
+    @media screen and (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.grayBg {
+    background: url($img+'graygb.jpg');
+    color: $white;
+    &.lightcut::after {
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        width: 60%;
+        background: rgba($white, 0.09);
+        content: '';
+        top: 0;
+        left: 0;
+    }
+}
+
+.blackbg {
+    background: $black;
+    color: $white;
+    padding: 77px 0 70px 0;
+}
+
+.orangebg {
+    background: $orange;
+    color: $black;
+    padding: 50px 0 0px 0;
+}
+
+.logoHeader {
+    @media screen and (max-width: 768px) {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+}
+
+.logoHeaderMobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.topmenu {
+    ul {
+        @include fontBold;
+        font-size: 18px;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: $black;
+        li {
+            a {
+                padding: 0 30px;
+                @include transition;
+                &:hover {
+                    color: $white;
+                }
+            }
+            &:first-of-type {
+                padding-left: 0;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: $orange;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        ul {
+            justify-content: center;
+            li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 24px;
+            }
+        }
+        &.active {
+            display: flex;
+            animation: appearFromBottom linear 200ms normal forwards;
+        }
+    }
+}
+
+.mobileMenuButton {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: $orange;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    img {
+        width: 50px;
+    }
+}
+
+.roundedButton {
+    @include fontBold;
+    border-radius: $borderRadius;
+    padding: 9px 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition;
+    align-self: flex-start;
+    &:hover {
+        cursor: pointer;
+    }
+    &.blackbutton {
+        background: $black;
+        color: $orange;
+        &:hover {
+            color: $black;
+            background: $orange;
+        }
+    }
+    &.orangebutton {
+        color: $black;
+        background: $orange;
+        &:hover {
+            background: $black;
+            color: $orange;
+        }
+    }
+}
+
+.strokeTitle {
+    @include fontExtraBold;
+    font-size: 70px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    color: $black;
+    text-stroke: 1px $white;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 1px $white;
+    -webkit-text-fill-color: transparent;
+    &.blackLine {
+        text-stroke: 1px $black;
+        -webkit-text-stroke: 1px $black;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+footer {
+    @include fontExtraBold;
+    font-size: 16px;
+    ul {
+        text-transform: uppercase;
+        li {
+            a {
+                color: $yellow;
+                @include transition;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@media (min-width: 1536px) {
+    body .container {
+        max-width: 1198px;
+    }
+}

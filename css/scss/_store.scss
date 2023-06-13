@@ -1,0 +1,67 @@
+
+#storeWrapper {
+    .strokeTitle {
+        margin-bottom: 33px;
+    }
+}
+
+.store {
+    position: relative;
+    // background: $black;
+    // max-width: 396px;
+    .store-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @extend .grayBg;
+        img {
+            @include transition;
+        }
+    }
+    .store-info {
+        margin-top: 13px;
+        background: $orange;
+        .store-product-title {
+            @include fontExtraBold;
+            font-size: 26px;
+            line-height: 25px;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+            @include transition;
+        }
+        .store-product-price {
+            @include fontSedgwickAve;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            @include transition;
+        }
+    }
+    .store-download-ico {
+        position: absolute;
+        right: 10px;
+        bottom: 140px;
+        opacity: 0;
+    }
+    &:hover {
+        cursor: pointer;
+        .store-image {
+            img {
+                transform: scale(.8);
+                box-shadow: 0 0 28px 8px rgba($white, .8);
+            }
+        }
+        .store-info {
+            .store-product-title {
+                color: $white;
+            }
+            .store-product-price {
+                color: $white;
+            }
+        }
+        .store-download-ico {
+            animation: appearFromBottom linear 200ms normal forwards;
+        }
+
+    }
+}

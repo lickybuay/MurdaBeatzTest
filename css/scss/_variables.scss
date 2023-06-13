@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Sen';
+    src: url('/fonts/Sen-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SenBold';
+    src: url('/fonts/Sen-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SenExtraBold';
+    src: url('/fonts/Sen-ExtraBold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SedgwickAve';
+    src: url('/fonts/SedgwickAve-Regular.ttf');
+    font-style: normal;
+}
+
+//Colors
+$white: #ffffff;
+$black: #000000;
+$orange: #F6C82A;
+$yellow: #FADF46;
+
+//Raduis
+$borderRadius: 21px;
+
+$img: '../img/'

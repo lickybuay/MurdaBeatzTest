@@ -1,0 +1,75 @@
+
+#videosWrapper {
+    padding-top: 93px;
+    .videos-title {
+        margin-bottom: 33px;
+    }
+    .videos {
+        .video {
+            position: relative;
+            .video-featured {
+                background: $black;
+                position: relative;
+                img {
+                    opacity: 0.3;
+                    @include transition;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 118px;
+                    height: 118px;
+                    margin-top: -59px;
+                    margin-left: -59px;
+                    content: '';
+                    background: url($img+'playvideo.svg') no-repeat center center;
+                    display: none;
+                }
+            }
+            .video-info {
+                position: absolute;
+                left: 0;
+                bottom: -100px;
+                display: none;
+                .video-title {
+                    @include fontExtraBold;
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                }
+                .video-description {
+                    @include fontSedgwickAve;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                }
+                @media screen and (max-width: 768px) {
+                    position: relative;
+                    bottom: inherit;
+                    .video-title {
+                        margin: 20px 0;
+                    }
+                }
+            }
+            &.video-active {
+                .video-featured {
+                    &:after {
+                        display: block;
+                    }
+                    &:hover{
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .video-info {
+                    display: block;
+                }
+            }
+        }
+    }
+}
